@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Working Dynamics</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blockchain Working Dynamics</h1>
+    <div class="input-section">
+      <label for="data">Enter Data:</label>
+      <input type="text" id="data" placeholder="Enter data...">
+      <button onclick="addToBlockchain()">Add to Blockchain</button>
+    </div>
+    <div class="blockchain-section">
+      <h2>Blockchain</h2>
+      <div class="blockchain-chain" id="blockchain"></div>
+    </div>
+    <div class="blockchain-concepts" id="concepts">
+      <h3>Blockchain Concepts</h3>
+      <p><strong>Hashing:</strong> A cryptographic function that converts data into a fixed-length string (hash). Any change in data will result in a completely different hash.</p>
+      <p><strong>Linking Blocks:</strong> Each block in the blockchain contains the hash of the previous block, creating a chain-like structure that ensures the integrity of the data.</p>
+      <p><strong>Immutability:</strong> Once a block is added to the blockchain, it cannot be altered or deleted, making the blockchain tamper-proof and secure.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
