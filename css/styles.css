@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+p{
+    word-break: break-word;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.blockchain-section {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  position: relative;
+}
+
+.blockchain-chain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.block {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease;
+  position: relative;
+}
+
+.block::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  height: 1px;
+  width: 20px;
+  background-color: #ccc;
+}
+
+.block:first-child::before {
+  display: none;
+}
+
+.block::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  height: 1px;
+  width: 20px;
+  background-color: #ccc;
+}
+
+.block:last-child::after {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .input-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .block {
+    width: 100%;
+  }
+}
+
+.blockchain-concepts {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.blockchain-concepts h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.blockchain-concepts p {
+  margin: 5px 0;
+}
