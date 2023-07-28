@@ -1,0 +1,27 @@
+@startuml
+
+!define BLOCKCHAIN_CHAIN class
+
+class Blockchain {
+  - chain: List<BLOCKCHAIN_CHAIN>
+  - symmetricKey: String
+  + generateSymmetricKey()
+  + calculateHash(data: String): String
+  + signData(data: String, key: String): String
+  + signAndAddToBlockchain(data: String)
+  + getPreviousBlockHash(): String
+  + updateBlockchainUI()
+}
+
+BLOCKCHAIN_CHAIN "Block" {
+  + index: Integer
+  + data: String
+  + signature: String
+  + previousHash: String
+  + timestamp: Long
+  + hash: String
+}
+
+Blockchain --> "*" BLOCKCHAIN_CHAIN
+
+@enduml
