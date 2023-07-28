@@ -6,6 +6,10 @@ Blockchain Demo is a web application that provides an interactive demonstration 
 
 The application allows users to generate RSA key pairs, sign transactions using private keys, and add new blocks to the blockchain. The visual representation of the blockchain with linked blocks helps users understand the core principles of blockchain technology.
 
+## Architecture
+
+![Blockchain Demo Architecture](./docs/architecture.png)
+
 ## Features
 
 - Generate RSA key pairs (Public Key and Private Key).
